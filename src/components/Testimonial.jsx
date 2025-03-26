@@ -44,8 +44,8 @@ const testimonials = [
   {
     name: "Aryan Sharma",
     quote: "Working with Altaf on projects was a great experience. His expertise, creativity, and problem-solving skills stood out, making every project smooth and successful. I have no hesitation in recommending him.",
-    designation: "Entrepreneur",
-    location: "Bangalore",
+    designation: "Web Development Intern at SpiTech",
+    location: "Bilaspur | IN",
     img: "/testimonial/aryan.jpg",
     linkedin: "https://www.linkedin.com/in/aryanastic/",
   },
