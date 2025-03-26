@@ -1,0 +1,49 @@
+.testimonial-carousel-container {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .testimonial-carousel-container::before,
+  .testimonial-carousel-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 15%; /* Adjust width of fade effect */
+    height: 100%;
+    z-index: 2;
+    pointer-events: none;
+  }
+  
+  .testimonial-carousel-dark::before {
+    left: 0;
+    background: linear-gradient(to right, rgb(0, 0, 0), rgba(0, 0, 0, 0));
+  }
+  
+  .testimonial-carousel-dark::after {
+    right: 0;
+    background: linear-gradient(to left, rgb(0, 0, 0), rgba(31, 41, 55, 0));
+  }
+
+  .testimonial-carousel-light::before {
+    left: 0;
+    background: linear-gradient(to right, #EEEEEE, rgba(233, 233, 233, 0.911), rgba(249, 247, 247, 0));
+  }
+  
+  .testimonial-carousel-light::after {
+    right: 0;
+    background: linear-gradient(to left, #EEEEEE, rgba(233, 233, 233, 0.911), rgba(249, 247, 247, 0));
+  }
+  
+  
+  .testimonial-slide {
+    transition: all 0.5s ease;
+    opacity: 0.5; 
+    transform: scale(0.9);
+  }
+  
+  .slick-center .testimonial-slide {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+
+  

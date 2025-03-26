@@ -1,0 +1,62 @@
+/* Button */
+
+@keyframes translateGradient {
+    0% {
+      transform: scaleX(0);
+      transform-origin: left;
+    }
+    100% {
+      transform: scaleX(1);
+      transform-origin: left;
+    }
+  }
+  
+  .gradient-hover {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    will-change: transform;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+  }
+
+  
+  
+  .gradient-hover::before {
+    content: "";
+    position: absolute;
+    inset: -2px; /* Extra coverage for gap prevention */
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s ease-in-out;
+  
+    /* ✅ Fix jagged edges */
+    filter: blur(1.5px); /* Slightly more blur */
+    will-change: transform, opacity;
+    pointer-events: none;
+  }
+  
+  .gradient-hover:hover::before {
+    transform: scaleX(1);
+  }
+
+  .gradient-light::before {
+    background: linear-gradient(to right, #6A42C2, #563A9C);
+}
+
+ .gradient-dark::before {
+    background: linear-gradient(to right, #8B5DFF, #563A9C);
+ }
+  
+  
+  
+  /* Optional: Improves text rendering */
+  .gradient-text {
+    position: relative;
+    z-index: 1;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    transition-duration: 50ms;
+  }
