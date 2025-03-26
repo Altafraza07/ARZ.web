@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import useReadingProgress from "../hooks/useReadingProgress";
 import { X, Menu } from "lucide-react";
 import DarkModeToggle from "./DarkMode";
-import ARZ from "../assets/arz-logo.png";
 import "@fontsource/montserrat";
 import { scrollToSection } from "../utils/scrollTo";
 import { getDarkMode } from "../utils/DarkMode";
