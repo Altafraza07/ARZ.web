@@ -70,10 +70,10 @@ const About = () => {
             <img
               src="/mypic.jpg"
               alt="Your Name"
-              className=" md:border-none mx-auto border-b-4 border-r-4 border-white/75 w-48 h-48 md:w-80 md:h-90 rounded-lg object-cover shadow-lg z-2 md:mb-20"
+              className=" md:border-none mx-auto border-b-4 border-r-4 border-white/75 w-48 h-48 md:w-70 md:h-90 rounded-lg object-cover shadow-lg z-2 md:mb-20"
             />
             </div>
-            <div className="md:absolute hidden w-64 h-64 md:w-80 md:h-90 rounded-lg bg-gradient-to-t dark:from-[#ffffffb7] dark:via-[#fff] dark:to-[#fffce375] from-[#c3cad6] to-[#afb5c0] top-2 right-2 z-1 md:hidden lg:inline-block"></div>
+            <div className="md:absolute hidden md:w-70 md:h-90 rounded-lg bg-gradient-to-t dark:from-[#ffffffb7] dark:via-[#fff] dark:to-[#fffce375] from-[#c3cad6] to-[#afb5c0] top-2 right-2 z-1 md:hidden lg:inline-block"></div>
           </div>
         </div>
 
