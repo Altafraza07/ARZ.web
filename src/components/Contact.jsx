@@ -133,7 +133,7 @@ const Contact = () => {
               
               <button
                 onClick={sendToWhatsApp}
-                className={`flex items-center py-3 px-5 dark:text-white hover:text-white  gradient-hover transition-all gap-2 text-black font-semibold rounded-2xl overflow-hidden gradient-hover shadow-[inset_0_0_0_2px_black] dark:shadow-[inset_0_0_0_2px_white] hover:shadow-[inset_0_0_10px_2px_rgba(0,0,0,0.3)] dark:hover:shadow-[inset_0_0_10px_2px_rgba(255,255,255,0.6)] ${
+                className={`flex items-center py-3 px-5 dark:text-white hover:text-white gradient-hover transition-all gap-2 text-black font-semibold rounded-2xl overflow-hidden gradient-hover shadow-[inset_0_0_0_2px_black] dark:shadow-[inset_0_0_0_2px_white] hover:shadow-[inset_0_0_10px_2px_rgba(0,0,0,0.3)] dark:hover:shadow-[inset_0_0_10px_2px_rgba(255,255,255,0.6)] ${
                   darkMode ? "gradient-dark" : "gradient-light"
                 }`}
               >
@@ -142,8 +142,8 @@ const Contact = () => {
                   alt="whatsapp Logo"
                   className="md:w-[25px] md:h-[25px] w-[15px] h-[15px] gradient-text"
                 />
-                <span className="titillium-web tracking-wide gradient-text text-sm md:text-xl font-light whitespace-nowrap justify-center shadow-2xl">
-                  <span className="md:inline hidden">Send via</span> Whatsapp
+                <span className="titillium-web tracking-wide gradient-text hover:text-white text-sm md:text-xl font-light whitespace-nowrap justify-center shadow-2xl">
+                  <span className="md:inline hidden gradient-text hover:text-white">Send via</span> Whatsapp
                 </span>
               </button>
 
@@ -158,8 +158,8 @@ const Contact = () => {
                   alt="Gmail Logo"
                   className="md:w-[25px] md:h-[25px] w-[15px] h-[15px] gradient-text shadow-2xl"
                 />
-                <span className="titillium-web tracking-wide gradient-text text-sm md:text-xl font-light whitespace-nowrap justify-center shadow-2xl">
-                  <span className="md:inline hidden">Send via</span> E-mail
+                <span className="titillium-web tracking-wide gradient-text hover:text-white text-sm md:text-xl font-light whitespace-nowrap justify-center shadow-2xl">
+                  <span className="md:inline hidden gradient-text hover:text-white">Send via</span> E-mail
                 </span>
               </button>
             </div>
