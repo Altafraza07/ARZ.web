@@ -57,8 +57,8 @@ const Contact = () => {
 
   return (
     <>
-    <div className="relative dark:bg-black bg-[#F9F7F7] flex justify-center md:py-14 py-7 z-50">
-      <div className="absolute text-center md:w-1/2 w-[70%] dark:bg-gradient-to-r from-[#6A42C2] via-[#6A42C2] to-[#6A42C2] bg-[#563A9C] mx-auto rounded-xl md:p-8 p-4 md:-top-14 -top-[45px] !z-1000">
+    <div className="relative dark:bg-black bg-[#F9F7F7] flex justify-center md:py-14 py-7">
+      <div className="absolute text-center md:w-1/2 w-[70%] dark:bg-gradient-to-r from-[#6A42C2] via-[#6A42C2] to-[#6A42C2] bg-[#563A9C] mx-auto rounded-xl md:p-8 p-4 md:-top-14 -top-[45px] !z-49">
         <h2 className="font-light text-md  text-center md:text-3xl  font-[montserrat] text-white">
           Get in touch to create something unique.
         </h2>
@@ -126,7 +126,7 @@ const Contact = () => {
               />
             </div>
             <div className="md:hidden flex flex-col justify-center items-center mx-auto font-[montserrat] tracking-widest">
-              <span >: Send Message Via :</span>
+              <span className="text-gray-700 dark:text-gray-300">: Send Message Via :</span>
               </div>
 
             <div className="flex md:justify-end justify-center space-x-4">
