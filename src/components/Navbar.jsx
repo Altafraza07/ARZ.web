@@ -124,8 +124,8 @@ const Navbar = () => {
           {[
             "Home", 
             "About Me", 
-            "Services", 
             "Projects", 
+            "Testimonials", 
             "Contact"
           ].map((item) => (
             <li key={item}>
