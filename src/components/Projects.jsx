@@ -33,28 +33,6 @@ const Projects = () => {
           </h1>
         </div>
 
-        {/* project 2 */}
-        <div className="flex flex-col-reverse md:flex-row justify-center w-full gap-8 md:mb-12 md:py-24 py-20 md:px-0 px-2">
-          {/* Text Content */}
-          <div className="flex flex-col w-full md:w-[35%] text-justify md:mr-5">
-            <h1 className="font-bold text-2xl md:text-4xl mb-4 dark:text-gray-200 text-gray-700">
-              Simon Says Game
-            </h1>
-            <div className="space-y-4 m-0">
-              {projects.map((project, index) => (
-                <div key={index} className="flex flex-wrap gap-2 mb-1">
-                  {project.simon?.map((tech, idx) => (
-                    <span
-                      key={idx}
-                      className="dark:bg-gray-800 dark:text-white bg-[#DBE2EF] text-gray-800 px-3 py-1 rounded-md text-sm m-0"
-                    >
-                      {tech}
-                    </span>
-                  ))}
-                </div>
-              ))}
-            </div>
-
         {/* project 1 */}
         <div className=" flex flex-col sm:flex-row justify-center gap-25 md:mb-12 md:py-24 py-12">
           <div className="flex flex-row justify-center items-center w-full sm:w-auto md:gap-4">
@@ -154,7 +132,27 @@ const Projects = () => {
           </div>
         </div>
 
-        
+        {/* project 2 */}
+        <div className="flex flex-col-reverse md:flex-row justify-center w-full gap-8 md:mb-12 md:py-24 py-20 md:px-0 px-2">
+          {/* Text Content */}
+          <div className="flex flex-col w-full md:w-[35%] text-justify md:mr-5">
+            <h1 className="font-bold text-2xl md:text-4xl mb-4 dark:text-gray-200 text-gray-700">
+              Simon Says Game
+            </h1>
+            <div className="space-y-4 m-0">
+              {projects.map((project, index) => (
+                <div key={index} className="flex flex-wrap gap-2 mb-1">
+                  {project.simon?.map((tech, idx) => (
+                    <span
+                      key={idx}
+                      className="dark:bg-gray-800 dark:text-white bg-[#DBE2EF] text-gray-800 px-3 py-1 rounded-md text-sm m-0"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+              ))}
+            </div>
 
             <p className="md:text-[18px] text-[16px] font-medium titillium-web dark:text-gray-300 text-gray-700 text-left mb-2">
               This is an interactive Simon Says game built using HTML, CSS,
