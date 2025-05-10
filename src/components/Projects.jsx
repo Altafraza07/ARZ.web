@@ -28,7 +28,7 @@ const Projects = () => {
       <div className="flex flex-col justify-center text-center">
         <div className="w-full max-w-[1675px] mx-auto px-4 sm:px-8 md:px-12 lg:px-20 xl:px-32">
           <h1 className="md:text-5xl text-3xl font-bold tracking-normal text-left text-gray-700 dark:text-white z-10 md:py-2 pb-4 m-0 futura">
-            View My Projects
+            View My Work
             <hr className="h-[1px] bg-gradient-to-r from-gray-300 to-black border-none w-1/2 mt-3" />
           </h1>
         </div>
@@ -165,9 +165,9 @@ const Projects = () => {
       <li>Fast load times and SEO-friendly structure.</li>
     </ul>
 
-    <div className="md:mt-12 mt-4 flex items-end">
+    <div className="md:mt-12 mt-4 flex items-end justify-start">
       <div
-        className={`titillium-web tracking-widest duration-300 bg-gradient-to-r from-[#8B5DFF] to-[#9d76ff] dark:from-violet-400 dark:to-violet-500 relative px-6 py-[10px] text-white hover:text-white font-semibold rounded-2xl overflow-hidden gradient-hover ${
+        className={`titillium-web tracking-widest duration-300 bg-gradient-to-r from-[#8B5DFF] to-[#9d76ff] dark:from-violet-400 w-[40%] dark:to-violet-500 relative px-10 py-[10px] text-white hover:text-white font-semibold rounded-2xl overflow-hidden gradient-hover ${
           darkMode ? "gradient-dark" : "gradient-light"
         } mr-6`}
       >
