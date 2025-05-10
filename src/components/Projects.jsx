@@ -180,19 +180,19 @@ const Projects = () => {
         </a>
       </div>
 
-      <div
+      {/* <div
         className={`titillium-web tracking-widest duration-300 relative px-6 py-[10px] gradient-hover hover:text-white text-black dark:text-white font-semibold rounded-2xl overflow-hidden gradient-hover shadow-[inset_0_0_0_2px_black] dark:shadow-[inset_0_0_0_2px_white] hover:shadow-[inset_0_0_10px_2px_rgba(0,0,0,0.3)] dark:hover:shadow-[inset_0_0_10px_2px_rgba(255,255,255,0.6)] ${
           darkMode ? "gradient-dark" : "gradient-light"
         }`}
       >
         <a
-          href="https://github.com/Altafraza07/pratik-tiwari"
+          
           target="_blank"
           className="gradient-text titillium-web tracking-widest md:text-[16px] text-[14px]"
         >
           GitHub
         </a>
-      </div>
+      </div> */}
     </div>
   </div>
 
