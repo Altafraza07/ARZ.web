@@ -35,7 +35,7 @@ const DarkModeToggle = ({ className = "" }) => {
               ? "translateX(12px) scale(0.8)"
               : "translateX(0) scale(1)",
           }}
-          className="absolute left-2 w-4 h-4 text-yellow-500"
+          className="absolute left-2 w-4 h-4 text-gray-800"
         />
 
         {/* Moon Icon (Shifts Left & Fades In) */}
