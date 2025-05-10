@@ -19,7 +19,7 @@ const Projects = () => {
 
   const projects = [
     { eshop: ["MongoDB", "Express.js", "React.js", "Node.js", "Tailwind"] },
-    { lawyer: ["HTML", "CSS", "Javascript", "ReactJs", "AnimateOnScroll", "React-Sclick for Carousel", "Vercel"] },
+    { lawyer: ["HTML", "CSS", "Javascript", "ReactJs","Vite", "AnimateOnScroll", "React-Sclick for Carousel", "Vercel"] },
     { new: ["Vue.js", "Firebase", "Bootstrap", "GraphQL"] },
   ];
 
@@ -137,7 +137,7 @@ const Projects = () => {
   {/* Text Content */}
   <div className="flex flex-col w-full md:w-[35%] text-justify md:mr-5">
     <h1 className="font-bold text-2xl md:text-4xl mb-4 dark:text-gray-200 text-gray-700">
-      Lawyer Portfolio Website
+      Advocate Pratik Tiwari - Portfolio
     </h1>
     <div className="space-y-4 m-0">
       {projects.map((project, index) => (
@@ -207,7 +207,7 @@ const Projects = () => {
     {/* Stack "ADVANCED JS" and dots only on mobile */}
     <div className="flex flex-col  items-center md:items-start md:justify-end ml-4 md:ml-8">
       <h2 className="vertical-tb font-extralight text-xl md:text-4xl tracking-widest montserrat text-[#000] dark:text-white">
-        REACTJS
+        REACT + Vite
       </h2>
       {darkMode ? (
         <img
