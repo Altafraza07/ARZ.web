@@ -172,7 +172,7 @@ const Projects = () => {
         } mr-6`}
       >
         <a
-          href="https://your-lawyer-site.vercel.app"
+          href="https://www.pratiktiwari.in/"
           target="_blank"
           className="gradient-text titillium-web tracking-widest md:text-[16px] text-[14px]"
         >
@@ -186,7 +186,7 @@ const Projects = () => {
         }`}
       >
         <a
-          href="https://github.com/Altafraza07/lawyer-portfolio"
+          href="https://github.com/Altafraza07/pratik-tiwari"
           target="_blank"
           className="gradient-text titillium-web tracking-widest md:text-[16px] text-[14px]"
         >
