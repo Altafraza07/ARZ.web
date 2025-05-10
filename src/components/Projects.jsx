@@ -19,7 +19,7 @@ const Projects = () => {
 
   const projects = [
     { eshop: ["MongoDB", "Express.js", "React.js", "Node.js", "Tailwind"] },
-    { simon: ["HTML", "CSS", "Javascript", "jQuery"] },
+    { lawyer: ["HTML", "CSS", "Javascript", "ReactJs", "AnimateOnScroll", "React-Sclick for Carousel", "Vercel"] },
     { new: ["Vue.js", "Firebase", "Bootstrap", "GraphQL"] },
   ];
 
@@ -133,102 +133,98 @@ const Projects = () => {
         </div>
 
         {/* project 2 */}
-        <div className="flex flex-col-reverse md:flex-row justify-center w-full gap-8 md:mb-12 md:py-24 py-20 md:px-0 px-2">
-          {/* Text Content */}
-          <div className="flex flex-col w-full md:w-[35%] text-justify md:mr-5">
-            <h1 className="font-bold text-2xl md:text-4xl mb-4 dark:text-gray-200 text-gray-700">
-              Simon Says Game
-            </h1>
-            <div className="space-y-4 m-0">
-              {projects.map((project, index) => (
-                <div key={index} className="flex flex-wrap gap-2 mb-1">
-                  {project.simon?.map((tech, idx) => (
-                    <span
-                      key={idx}
-                      className="dark:bg-gray-800 dark:text-white bg-[#DBE2EF] text-gray-800 px-3 py-1 rounded-md text-sm m-0"
-                    >
-                      {tech}
-                    </span>
-                  ))}
-                </div>
-              ))}
-            </div>
-
-            <p className="md:text-[18px] text-[16px] font-medium titillium-web dark:text-gray-300 text-gray-700 text-left mb-2">
-              This is an interactive Simon Says game built using HTML, CSS,
-              JavaScript, and jQuery. The game challenges players to remember
-              and replicate an increasingly complex sequence of button presses.
-              Each round, a new color is added to the sequence, and the player
-              must repeat the pattern correctly to advance to the next level.
-            </p>
-            <ul className="md:text-[16px] text-[14px] list-disc titillium-web dark:text-gray-300 text-gray-700 ml-5">
-              <li>The sequence grows as the player progresses. </li>
-              <li>Uses animations and sound effects for better user experience. </li>
-              <li>Each button press is accompanied by a unique sound. </li>
-              <li>If the user clicks the wrong button, the game resets. </li>
-              <li>Supports touch and keypress events for a smooth experience.</li>
-            </ul>
-
-            <div className="md:mt-12 mt-4 flex items-end">
-              <div
-                className={`titillium-web tracking-widest duration-300 bg-gradient-to-r from-[#8B5DFF] to-[#9d76ff] dark:from-violet-400 dark:to-violet-500 relative px-6 py-[10px] text-white hover:text-white font-semibold rounded-2xl overflow-hidden gradient-hover ${
-                  darkMode ? "gradient-dark" : "gradient-light"
-                } mr-6`}
-              >
-                <a
-                  href="https://altafraza07.github.io/SimonSays/"
-                  target="_blank"
-                  className="gradient-text titillium-web tracking-widest md:text-[16px] text-[14px]"
-                >
-                  Visit Site
-                </a>
-              </div>
-
-              <div
-                className={`titillium-web tracking-widest duration-300 relative px-6 py-[10px] gradient-hover hover:text-white text-black dark:text-white font-semibold rounded-2xl overflow-hidden gradient-hover shadow-[inset_0_0_0_2px_black] dark:shadow-[inset_0_0_0_2px_white] hover:shadow-[inset_0_0_10px_2px_rgba(0,0,0,0.3)] dark:hover:shadow-[inset_0_0_10px_2px_rgba(255,255,255,0.6)] ${
-                  darkMode ? "gradient-dark" : "gradient-light"
-                }`}
-              >
-                <a
-                  href="https://github.com/Altafraza07/SimonSays"
-                  target="_blank"
-                  className="gradient-text titillium-web tracking-widest md:text-[16px] text-[14px]"
-                >
-                  GitHub
-                </a>
-              </div>
-            </div>
-          </div>
-
-          {/* Image + "ADVANCED JS" & Dots */}
-          <div className="flex flex-row justify-center items-center md:items-start w-full md:w-[40%] md:gap-4">
-            <img
-              src="mockup2.png"
-              alt="Simon Says Game"
-              className="md:w-[100%] w-[350px] rounded-lg"
-            />
-
-            {/* Stack "ADVANCED JS" and dots only on mobile */}
-            <div className="flex flex-col  items-center md:items-start md:justify-end ml-4 md:ml-8">
-              <h2 className="vertical-tb font-extralight text-xl md:text-4xl tracking-widest montserrat text-[#000] dark:text-white">
-                JAVASCRIPT
-              </h2>
-              {darkMode ? (
-                <img
-                  src="dot.png"
-                  alt=""
-                  className="md:w-[65%] w-[15px] mt-1 md:ml-1"
-                />
-              ) : (
-                <img
-                  src="blackdot.png"
-                  alt=""
-                  className="md:w-[65%] w-[15px] mt-1 md:ml-1"
-                />
-              )}
-            </div>
-          </div>
+       <div className="flex flex-col-reverse md:flex-row justify-center w-full gap-8 md:mb-12 md:py-24 py-20 md:px-0 px-2">
+  {/* Text Content */}
+  <div className="flex flex-col w-full md:w-[35%] text-justify md:mr-5">
+    <h1 className="font-bold text-2xl md:text-4xl mb-4 dark:text-gray-200 text-gray-700">
+      Lawyer Portfolio Website
+    </h1>
+    <div className="space-y-4 m-0">
+      {projects.map((project, index) => (
+        <div key={index} className="flex flex-wrap gap-2 mb-1">
+          {project.lawyer?.map((tech, idx) => (
+            <span
+              key={idx}
+              className="dark:bg-gray-800 dark:text-white bg-[#DBE2EF] text-gray-800 px-3 py-1 rounded-md text-sm m-0"
+            >
+              {tech}
+            </span>
+          ))}
         </div>
+      ))}
+    </div>
+
+    <p className="md:text-[18px] text-[16px] font-medium titillium-web dark:text-gray-300 text-gray-700 text-left mb-2">
+      This is a professional portfolio website built for a lawyer client during a freelance project. It showcases their background, practice areas, testimonials, and contact form, designed to build trust and encourage client inquiries. The site is fully responsive and optimized for performance and accessibility.
+    </p>
+    <ul className="md:text-[16px] text-[14px] list-disc titillium-web dark:text-gray-300 text-gray-700 ml-5">
+      <li>Developed using React, TailwindCSS, and AnimateOnScroll.</li>
+      <li>Fully responsive and cross-browser compatible layout.</li>
+      <li>Professionally hosted on Vercel with custom domain from Hostinger.</li>
+      <li>Smooth animations and clear content hierarchy for strong UX.</li>
+      <li>Fast load times and SEO-friendly structure.</li>
+    </ul>
+
+    <div className="md:mt-12 mt-4 flex items-end">
+      <div
+        className={`titillium-web tracking-widest duration-300 bg-gradient-to-r from-[#8B5DFF] to-[#9d76ff] dark:from-violet-400 dark:to-violet-500 relative px-6 py-[10px] text-white hover:text-white font-semibold rounded-2xl overflow-hidden gradient-hover ${
+          darkMode ? "gradient-dark" : "gradient-light"
+        } mr-6`}
+      >
+        <a
+          href="https://your-lawyer-site.vercel.app"
+          target="_blank"
+          className="gradient-text titillium-web tracking-widest md:text-[16px] text-[14px]"
+        >
+          Visit Site
+        </a>
+      </div>
+
+      <div
+        className={`titillium-web tracking-widest duration-300 relative px-6 py-[10px] gradient-hover hover:text-white text-black dark:text-white font-semibold rounded-2xl overflow-hidden gradient-hover shadow-[inset_0_0_0_2px_black] dark:shadow-[inset_0_0_0_2px_white] hover:shadow-[inset_0_0_10px_2px_rgba(0,0,0,0.3)] dark:hover:shadow-[inset_0_0_10px_2px_rgba(255,255,255,0.6)] ${
+          darkMode ? "gradient-dark" : "gradient-light"
+        }`}
+      >
+        <a
+          href="https://github.com/Altafraza07/lawyer-portfolio"
+          target="_blank"
+          className="gradient-text titillium-web tracking-widest md:text-[16px] text-[14px]"
+        >
+          GitHub
+        </a>
+      </div>
+    </div>
+  </div>
+
+  {/* Image + "ADVANCED JS" & Dots */}
+  <div className="flex flex-row justify-center items-center md:items-start w-full md:w-[40%] md:gap-4">
+    <img
+      src="mockup2.png"
+      alt="Lawyer Website"
+      className="md:w-[100%] w-[350px] rounded-lg"
+    />
+
+    {/* Stack "ADVANCED JS" and dots only on mobile */}
+    <div className="flex flex-col  items-center md:items-start md:justify-end ml-4 md:ml-8">
+      <h2 className="vertical-tb font-extralight text-xl md:text-4xl tracking-widest montserrat text-[#000] dark:text-white">
+        REACTJS
+      </h2>
+      {darkMode ? (
+        <img
+          src="dot.png"
+          alt=""
+          className="md:w-[65%] w-[15px] mt-1 md:ml-1"
+        />
+      ) : (
+        <img
+          src="blackdot.png"
+          alt=""
+          className="md:w-[65%] w-[15px] mt-1 md:ml-1"
+        />
+      )}
+    </div>
+  </div>
+</div>
 
         {/* project 3 */}
       </div>
