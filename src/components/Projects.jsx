@@ -299,7 +299,7 @@ const Projects = () => {
             )}
           </div>
           <img
-            src="mockup1.png"
+            src="mockup3.png"
             alt=""
             className="items-center md:w-[100%] w-[350px] rounded-lg"
           />
