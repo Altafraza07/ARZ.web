@@ -282,7 +282,7 @@ const Projects = () => {
         <div className="flex flex-row justify-center items-center w-full sm:w-auto md:gap-4">
           <div className="flex flex-col">
             <h2 className="vertical-bt font-extralight text-xl md:text-4xl tracking-widest montserrat text-[#000] dark:text-white">
-              Gemini GenAI + MERN
+              Gemini GenAI
             </h2>
             {darkMode ? (
               <img
