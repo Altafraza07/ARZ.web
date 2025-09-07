@@ -35,7 +35,6 @@ body {
 }
 
 
-/* Smooth background and text color transition */
 html {
   transition: background-color 0.3s ease, color 0.3s ease;
   overflow-y: scroll;
@@ -45,7 +44,6 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Smooth transition for other elements */
 * {
   transition: background-color 0.3s ease, color 0.3s ease,
     border-color 0.3s ease;
@@ -167,12 +165,12 @@ body {
   }
   
   .vertical-bt {
-    writing-mode: vertical-rl; /* Top to Bottom */ 
+    writing-mode: vertical-rl; 
     transform: rotate(180deg);
   }
 
   .vertical-tb {
-    writing-mode: vertical-rl; /* Top to Bottom */
+    writing-mode: vertical-rl;
   }
 }
 
