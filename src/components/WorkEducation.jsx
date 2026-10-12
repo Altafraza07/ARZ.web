@@ -7,34 +7,20 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 import { getDarkMode } from "../utils/DarkMode";
 
-const experiences = [
+const experiencesAndEducation = [
   {
-    title: "Web Developer | Freelancing",
-    company: "Freelance",
-    date: "June 2024 - present",
+    title: "Full Stack Developer",
+    company: "M5C Logistics",
+    date: "2025 - present",
     description: [
-      "Develop custom websites for clients with optimized performance.",
-      "Implement modern frontend and backend technologies for scalability.",
-      "Ensure responsive, user-friendly designs tailored to client needs.",
+      "Architect and build full-stack web solutions and internal logistics applications.",
+      "Design resilient backend services, REST APIs, and responsive UI components.",
+      "Optimize web platform performance, user experience, and scalability.",
     ],
     iconBg: "bg-[#322b52]",
-    imgBG: "freelance.png",
+    imgBG: "m5c.png",
   },
-  {
-    title: "Web Developer | Intern",
-    company: "TrainingInbox",
-    date: "Mar 2024 - June 2024",
-    description: [
-      "Managed the company website and developed new pages.",
-      "Worked closely with UI/UX designers to implement precise designs.",
-      "Enhanced website functionality and improved user experience.",
-    ],
-    iconBg: "bg-[#322b52]",
-    imgBG: "trainingInbox.jpeg",
-  },
-];
-
-const education = [
+  
   {
     title: "Post Graduation | MCA",
     institution: "Lovely Professional University",
@@ -47,6 +33,33 @@ const education = [
     iconBg: "bg-[#322b52]",
     imgBG: "lpu.jpeg",
   },
+
+  {
+    title: "Web Developer | Freelancing",
+    company: "Freelance",
+    date: "2024 - 2025",
+    description: [
+      "Develop custom websites for clients with optimized performance.",
+      "Implement modern frontend and backend technologies for scalability.",
+      "Ensure responsive, user-friendly designs tailored to client needs.",
+    ],
+    iconBg: "bg-[#322b52]",
+    imgBG: "freelance.png",
+  },
+
+  {
+    title: "Web Developer | Intern",
+    company: "TrainingInbox",
+    date: "Mar 2024 - June 2024",
+    description: [
+      "Managed the company website and developed new pages.",
+      "Worked closely with UI/UX designers to implement precise designs.",
+      "Enhanced website functionality and improved user experience.",
+    ],
+    iconBg: "bg-[#322b52]",
+    imgBG: "trainingInbox.jpeg",
+  },
+
   {
     title: "Graduation | BCA",
     institution: "Atal Bihari Vajpayee University",
@@ -107,6 +120,7 @@ const TimelineCard = ({ data, darkMode }) => {
   );
 };
 
+
 const WorkEducation = () => {
   const [darkMode, setDarkMode] = useState(getDarkMode());
 
@@ -141,11 +155,8 @@ const WorkEducation = () => {
 
       <div className="!w-full">
         <VerticalTimeline className="!max-w-7xl" lineColor={darkMode ? "#BBE1FA" : "#000"}>
-          {experiences.map((exp, index) => (
-            <TimelineCard key={index} data={exp} darkMode={getDarkMode()} />
-          ))}
-          {education.map((edu, index) => (
-            <TimelineCard key={index} data={edu} darkMode={getDarkMode()} />
+          {experiencesAndEducation.map((item, index) => (
+            <TimelineCard key={index} data={item} darkMode={darkMode} />
           ))}
         </VerticalTimeline>
       </div>
@@ -153,5 +164,6 @@ const WorkEducation = () => {
     </div>
   );
 };
+
 
 export default WorkEducation;
