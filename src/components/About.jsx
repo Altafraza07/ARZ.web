@@ -85,36 +85,59 @@ const About = () => {
         </h2>
 
         {/* Skills Grid */}
-        <div className="flex flex-wrap justify-center items-center gap-6 md:gap-12 lg:gap-20 w-full md:max-w-[1655px] mx-auto px-4 md:px-12 lg:px-20 xl:px-32 p-2 md:p-6 rounded-lg">
+        <div className="flex flex-col items-center gap-6 md:gap-10 lg:gap-12 w-full md:max-w-[1750px] mx-auto px-2 sm:px-4 md:px-8 p-2 md:p-6">
           {[
-            "html.png",
-            "css.png",
-            "javascript.png",
-            "react.png",
-            "nodejs.png",
-            "express.png",
-            "restapi.png",
-            "tailwind.png",
-            "mongodb.png",
-            "git.png",
-            "redux.png",
-          ].map((image, index) => (
-            <div key={index} className="flex relative group">
-              <div className="overflow-hidden jelly-hover flex flex-col items-center w-20 h-24 md:w-24 md:h-24  bg-gradient-to-br from-[#cedbf1d0] via-[#DBE2EF] to-[#cedbf1d0] dark:from-[#ffffffb7] dark:via-[#fff] dark:to-[#fffce375] dark:hover:from-[#fff] dark:hover:via-[#fff] dark:hover:to-[#fff]  p-2 rounded-lg hover:scale-110 !transition-transform duration-300 ease-in-out">
-                <img
-                  src={`/skills/${image}`}
-                  alt={image.replace(".png", "")}
-                  className="w-16 h-16 md:w-20 md:h-20 object-contain"
-                />
-                <p className="text-center text-[10px] md:text-sm text-black font-medium tracking-widest titillium-web md:hidden mt-1">
-                {image.replace(".png", "").toUpperCase()}
-              </p>
-              </div>
+            // Row 1 (Top Core Technologies & Databases - 7 skills)
+            [
+              { name: "TYPESCRIPT", file: "typescript.svg" },
+              { name: "REACT", file: "react.png" },
+              { name: "NEXT.JS", file: "nextjs.svg" },
+              { name: "NODE.JS", file: "nodejs.png" },
+              { name: "PYTHON", file: "python.svg" },
+              { name: "POSTGRESQL", file: "postgres.svg" },
+              { name: "MONGODB", file: "mongodb.png" },
+            ],
+            // Row 2 (Frameworks, Caching, Cloud & State - 9 skills)
+            [
+              { name: "NEST.JS", file: "nestjs.svg" },
+              { name: "FASTIFY", file: "fastify.svg" },
+              { name: "EXPRESS", file: "express.png" },
+              { name: "REDIS", file: "redis.svg" },
+              { name: "AWS", file: "aws.svg" },
+              { name: "REST API", file: "restapi.png" },
+              { name: "REDUX", file: "redux.png" },
+              { name: "TAILWIND", file: "tailwind.png" },
+              { name: "JAVASCRIPT", file: "javascript.png" },
+            ],
+            // Row 3 (Foundations & Version Control - 3 skills)
+            [
+              { name: "GIT", file: "git.png" },
+              { name: "HTML", file: "html.png" },
+              { name: "CSS", file: "css.png" },
+            ],
+          ].map((row, rowIndex) => (
+            <div
+              key={rowIndex}
+              className="flex flex-wrap justify-center items-center gap-5 sm:gap-6 md:gap-8 lg:gap-10 xl:gap-12"
+            >
+              {row.map((skill, index) => (
+                <div key={index} className="flex relative group">
+                  <div className="overflow-hidden jelly-hover flex flex-col items-center w-20 h-24 md:w-24 md:h-24 bg-gradient-to-br from-[#cedbf1d0] via-[#DBE2EF] to-[#cedbf1d0] dark:from-[#ffffffb7] dark:via-[#fff] dark:to-[#fffce375] dark:hover:from-[#fff] dark:hover:via-[#fff] dark:hover:to-[#fff] p-2 rounded-lg hover:scale-110 !transition-transform duration-300 ease-in-out">
+                    <img
+                      src={`/skills/${skill.file}`}
+                      alt={skill.name}
+                      className="w-16 h-16 md:w-20 md:h-20 object-contain"
+                    />
+                    <p className="text-center text-[10px] md:text-sm text-black font-medium tracking-widest titillium-web md:hidden mt-1">
+                      {skill.name}
+                    </p>
+                  </div>
 
-              <span className="absolute bottom-[-1.5rem] left-1/2 -translate-x-1/2 text-[10px] md:text-xs text-white bg-black bg-opacity-60 px-1.5 py-0.5 rounded opacity-0 transition-opacity duration-300 group-hover:opacity-100 ">
-                {image.replace(".png", "").toUpperCase()}
-              </span>
-              
+                  <span className="absolute bottom-[-1.5rem] left-1/2 -translate-x-1/2 text-[10px] md:text-xs text-white bg-black bg-opacity-60 px-1.5 py-0.5 rounded opacity-0 transition-opacity duration-300 group-hover:opacity-100 whitespace-nowrap z-20">
+                    {skill.name}
+                  </span>
+                </div>
+              ))}
             </div>
           ))}
         </div>
